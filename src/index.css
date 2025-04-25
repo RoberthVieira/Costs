@@ -6,8 +6,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body , footer{
-    background-color: #EFEFEF;
-    height:100%;
+html, body, #root, .App {
+    height: 100%;
 }
-
+  
+body {
+    display: flex;
+    flex-direction: column;
+}
