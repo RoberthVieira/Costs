@@ -1,3 +1,33 @@
 {
-    "projects":[]
+  "projects": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desnevolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    },
+    {
+      "id": "8297"
+    },
+    {
+      "id": "7a97"
+    },
+    {
+      "id": "b230"
+    },
+    {
+      "id": "9a63"
+    }
+  ]
 }
