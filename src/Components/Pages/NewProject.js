@@ -14,7 +14,7 @@ export default function NewProject(){
         project.services = [];
 
         fetch('http://localhost:5000/projects',{
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -23,6 +23,7 @@ export default function NewProject(){
             .then((resposta => resposta.json()))
             .then((data) => {
                 console.log(data)
+                navigate('/projects', {message: "Projeto criado com sucesso!"})
             })
             .catch(erro => {console.log(erro)})
     }

@@ -28,3 +28,7 @@
     width: 350px;
     margin: 2em 0;
 }
+
+.home_contaier a{
+    text-decoration: none;
+}

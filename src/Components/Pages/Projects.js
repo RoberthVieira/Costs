@@ -1,7 +1,10 @@
-export default function Projects(){
+import Message from "../layout/Message"
+
+export default function Projects({}){
     return (
         <div>
-            <h1>Projects</h1>
+            <h1>Meus Projetos</h1>
+            <Message msg="Alguma mensagem"/>
         </div>
     )
 }
