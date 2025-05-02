@@ -43,6 +43,17 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "f74d",
+      "name": "teste",
+      "budget": "7",
+      "categories": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
