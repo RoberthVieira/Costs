@@ -3,7 +3,7 @@ import Home from "./Components/Pages/Home";
 import Company from "./Components/Pages/Company";
 import Contato from "./Components/Pages/Contato";
 import NewProject from "./Components/Pages/NewProject";
-
+import Project from "./Components/Pages/Project";
 
 import Container from "./Components/layout/Container";
 import NavBar from "./Components/layout/NavBar";
@@ -17,11 +17,12 @@ export default function App() {
         <NavBar/>
           <Container customClass="minheight">
             <Routes>
-              <Route path='/' element={<Home/>}/>
+              <Route exact path='/' element={<Home/>}/>
               <Route path='/projects' element={<Projects/>}/>
               <Route path='/company' element={<Company/>}/>
               <Route path='/contato' element={<Contato/>}/>
               <Route path='/newproject' element={<NewProject/>}/>
+              <Route path='/project/:id' element={<Project/>}/>
             </Routes>
           </Container>
       </Router>
