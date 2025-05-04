@@ -22,6 +22,6 @@ export default function Project() {
     })
 
     return(
-        <p>{project.name}</p>
+        <p>{project}</p>
     )
 }
