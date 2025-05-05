@@ -13,8 +13,8 @@
     },
     {
       "id": "17f8",
-      "name": "teste2",
-      "budget": "100",
+      "name": "teste atualizado",
+      "budget": "10000",
       "categories": {
         "id": "1",
         "name": "Infra"
