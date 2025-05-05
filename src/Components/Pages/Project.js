@@ -14,6 +14,7 @@ export default function Project() {
     const [showProjectForm, setShowProjectForm] = useState(false);
     const [message, setMessage] = useState();
     const [messageType, setMessageType] = useState();
+    const [showServiceForm, setShowServiceForm] = useState(false)
 
     useEffect(() => {
         setTimeout(() => {
@@ -34,7 +35,12 @@ export default function Project() {
         setShowProjectForm(!showProjectForm);
     }
 
+    function toggleServiceForm(){
+        setShowServiceForm(!showServiceForm)
+    }
+
     function editPost(project){
+        setMessage('')
         
         if(project.budget < project.cost){
             setMessage("O orçamento não pode ser menor que o custo do projeto!")
@@ -88,6 +94,19 @@ export default function Project() {
                                 </div>
                             )}
                         </div>
+                        <div className={styles.service_form_container}>
+                            <h2>Adicione um serviço</h2>
+                            <button onClick={toggleServiceForm} className={styles.btn}>
+                                {!showServiceForm ? 'Adicionar Serviço' : 'Fechar'}
+                            </button>
+                            <div className={styles.projectInfo}>
+                                {showServiceForm && (<div>Formulario</div>)}
+                            </div>
+                        </div>
+                        <h2>Serviços</h2>
+                        <Container customClass='start'>
+                            <p>Itens de Serviços</p>
+                        </Container>
                     </Container>
                 </div>
             ) : (
