@@ -21,17 +21,6 @@
       },
       "cost": 0,
       "services": []
-    },
-    {
-      "id": "a72c",
-      "name": "teste3",
-      "budget": "10000",
-      "categories": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": []
     }
   ],
   "categories": [
