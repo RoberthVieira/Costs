@@ -19,8 +19,15 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "services": []
+      "cost": 500,
+      "services": [
+        {
+          "name": "teste serviços",
+          "cost": "500",
+          "description": "contratação",
+          "id": "9b54fc49-24ea-4b5b-9d24-4c774bcdad5b"
+        }
+      ]
     }
   ],
   "categories": [
