@@ -1,35 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "fc92",
-      "name": "teste",
-      "budget": "1000",
-      "categories": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "17f8",
-      "name": "teste atualizado",
-      "budget": "1000",
-      "categories": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 500,
-      "services": [
-        {
-          "name": "teste serviços",
-          "cost": "500",
-          "description": "contratação",
-          "id": "9b54fc49-24ea-4b5b-9d24-4c774bcdad5b"
-        }
-      ]
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",
