@@ -31,3 +31,21 @@
 .bold span{
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .footer {
+      padding: 1.5em 1em;
+    }
+  
+    .socialList {
+      gap: 0.5rem;
+    }
+  
+    .socialList li {
+      font-size: 1.3rem;
+    }
+  
+    .bold {
+      font-size: 1rem;
+    }
+  }

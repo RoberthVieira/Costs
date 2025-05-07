@@ -4,10 +4,20 @@
     padding: 1em;
 }
 
+.menuIcon {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
 .list{
     display: flex;
     list-style: none;
     align-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .item{
@@ -17,8 +27,40 @@
 .links{
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .links:hover{
     color: #FFBB33;
+}
+
+@media (max-width: 768px) {
+    .menuIcon {
+        display: block;
+        position: absolute;
+        top: 1.2em;
+        right: 2em;
+    }
+  
+    .list {
+        flex-direction: row;
+        width: 100%;
+        background-color: #222;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        display: none;
+        z-index: 1;
+        padding: 1em 0;
+    }
+  
+    .active {
+        display: flex;
+    }
+  
+    .item {
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
 }
