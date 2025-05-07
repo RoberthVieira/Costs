@@ -1,0 +1,24 @@
+.about {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about h1{
+    margin-bottom: 2rem;
+    background-color: #222;
+    color: #ffbb33;
+    padding: 0.4em;
+}
+
+.about ul{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.about li::before{
+    content: '💡';
+    margin-right: 8px;
+}

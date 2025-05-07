@@ -1,0 +1,24 @@
+.contact {
+    padding: 3rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.contact h1{
+    margin-bottom: 2rem;
+    background-color: #222;
+    color: #ffbb33;
+    padding: 0.4em;
+}
+
+.contact ul{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.contact span{
+    font-weight: bold;
+}
