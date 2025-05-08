@@ -9,3 +9,17 @@
     margin-bottom: 2em;
 }
 
+@media (max-width: 500px) {
+    .project_container {
+        padding: 1em; 
+    }
+
+    .title_container{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title_container h1{
+        margin-bottom: 0.85em;
+    }
+}

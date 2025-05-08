@@ -13,4 +13,31 @@
     padding: 0.8em;
     border-radius: 3px;
     border: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+.form_control option {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1em;
+}
+
+@media(max-width: 500px){
+    .form_control{
+        margin-bottom: 0.8em;
+    }
+
+    .form_control label{
+        margin-bottom: 0.5em;
+        font-size: 0.95em;
+        text-align: left;
+    }
+
+    .form_control select{
+        padding: 0.6em;
+        font-size: 1rem;
+    }
 }

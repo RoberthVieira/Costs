@@ -22,3 +22,15 @@
 .contact span{
     font-weight: bold;
 }
+
+
+@media (max-width: 500px) {
+    .contact {
+        padding: 2rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+}

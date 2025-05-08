@@ -22,3 +22,14 @@
     content: '💡';
     margin-right: 8px;
 }
+
+@media (max-width: 500px) {
+    .about {
+        padding: 2rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .about h1 {
+        font-size: 1.5rem;
+    }
+}
