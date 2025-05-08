@@ -6,7 +6,7 @@ export default function Home(){
     return (
         <section className={styles.home_contaier}>
             <h1>
-                Bem vido ao <span>Costs</span>
+                Bem vindo ao <span>Costs</span>
             </h1>
             <p>Começe a genreciar os seus projetos agora mesmo!</p>
             <a href="/"><LinkBtn to='/newproject' text='Criar projeto'/></a>
