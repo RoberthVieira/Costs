@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+Costs - Projeto de Gestão de Custos
+O Costs é um projeto de gestão de custos que permite aos usuários adicionar, editar e excluir registros de despesas. A aplicação conta com um frontend desenvolvido em React e uma simulação de backend utilizando JSON Server para persistir os dados de forma local, sem a necessidade de um servidor real. O backend local simula um banco de dados, mas a aplicação não está conectada a um banco de dados real.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Funcionalidades
+Cadastro de despesas: O usuário pode cadastrar despesas com detalhes como valor, categoria e descrição.
+Edição e exclusão de despesas: O usuário pode modificar ou excluir despesas já cadastradas.
+Simulação de backend: Os dados são armazenados localmente utilizando o JSON Server, simulando o comportamento de um backend real.
 
-In the project directory, you can run:
 
-### `npm start`
+Tecnologias Utilizadas
+Frontend: React, JavaScript, CSS (ou Styled Components, se aplicável)
+Backend (simulado): JSON Server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Como Funciona a Simulação do Backend
+O projeto utiliza o JSON Server, uma ferramenta que simula um backend RESTful com base em um arquivo de JSON. Ao rodar o servidor localmente, ele cria um "banco de dados" no formato JSON, permitindo que as operações de criar, ler, atualizar e deletar (CRUD) sejam realizadas de maneira semelhante a um backend real.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Estrutura do JSON Server
+O arquivo db.json contém os dados persistidos, que no caso do projeto são as despesas. Quando o usuário adiciona, edita ou exclui uma despesa, a aplicação realiza requisições HTTP (GET, POST, PUT, DELETE) para o servidor local do JSON Server, e ele simula a persistência de dados.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Limitações da Simulação
+Este backend é apenas uma simulação para fins de desenvolvimento e testes. Ele não oferece escalabilidade nem segurança de um backend real e só funciona localmente. Caso você deseje fazer o deploy da aplicação em uma plataforma de produção, será necessário substituir a simulação por um backend real, como o Node.js com Express ou uma solução de backend em nuvem como o Firebase ou AWS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Como Rodar o Projeto
+Pré-requisitos
+Node.js instalado na sua máquina
 
-### `npm run eject`
+Passos
+Clone o repositório: git clone <a href="https://github.com/RoberthVieira/Costs">
+Navegue até o diretório do projeto: cd costs
+Instale as dependências: npm install
+Inicie o servidor do JSON Server: npm run server
+Inicie o frontend: npm start
+Acesse a aplicação no seu navegador em http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deploy
+Por ser um projeto que depende de uma simulação de backend local, o deploy da aplicação exigirá uma abordagem diferente. Para colocar a aplicação em produção, você precisará substituir o backend simulado por um backend real ou utilizar um serviço que permita persistir os dados.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contribuindo
+Faça um fork deste repositório.
+Crie uma branch para suas modificações: git checkout -b minha-modificacao
+Faça as alterações e commite: git commit -am 'Descrição das alterações'
+Envie para o repositório remoto: git push origin minha-modificacao
+Crie um pull request.
